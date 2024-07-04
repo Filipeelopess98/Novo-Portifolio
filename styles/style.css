@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  transform: rotateX(-10deg) rotateY(10deg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.image-3d:hover {
+  transform: rotateX(-5deg) rotateY(5deg);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-fullscreen {
+  background-color: #e2e8f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateY(-100%);
+  opacity: 0;
+  z-index: 50;
+}
+.menu-fullscreen.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+.menu-fullscreen .close-btn,
+.menu-fullscreen .minimize-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-fullscreen .minimize-btn {
+  right: 50px;
+}
+
+@keyframes led-animation {
+  0% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00f,
+      0 0 70px #00f, 0 0 80px #00f, 0 0 100px #00f, 0 0 150px #00f;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00f,
+      0 0 70px #00f, 0 0 80px #00f, 0 0 100px #00f, 0 0 150px #00f;
+  }
+}
+.bn30 {
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  padding: 0.7em 2em;
+  border-radius: 65px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: white;
+}
+
+.bn30 .text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+}
+
+.bn30:after {
+  content: "";
+  border-radius: 18px;
+  position: absolute;
+  margin: 4px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #221660;
+}
+
+.bn30:hover {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+
+.bn30:hover .text {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+}
+
+.bn31 {
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  padding: 0.7em 2em;
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: white;
+}
+
+.bn31:hover {
+  background-image: linear-gradient(-45deg, #4568dc, #221660);
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  color: #ffffff;
+}
+
+.bn31:hover p,
+h3 {
+  color: #ffffff;
+}
+
+.bn31:hover h3 {
+  color: #ffffff;
+}
+
+.bn31:hover .text {
+  background-image: linear-gradient(-45deg, #4568dc, #221660);
+}
+
+.transform3d {
+  transition: transform 0.1s ease;
+  transform-style: preserve-3d;
+}
+
+.btn-led {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.btn-led::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: -1;
+}
+.btn-led:hover::before {
+  opacity: 1;
+}
+.btn-led::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  opacity: 0.5;
+  transition: transform 0.5s;
+  transform: scale(2) rotate(45deg);
+  z-index: -1;
+}
+.btn-led:hover::after {
+  transform: scale(2.5) rotate(45deg);
+}
+.icon-container a {
+  display: inline-block;
+}
