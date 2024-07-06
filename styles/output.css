@@ -2279,6 +2279,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2834,6 +2839,14 @@ video {
   right: 50px;
 }
 
+.btn-led {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn-led.led-effect {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
 @keyframes led-animation {
   0% {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00f,
@@ -3184,6 +3197,16 @@ h3 {
     padding-right: 3rem;
   }
 
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .md\:pl-8 {
     padding-left: 2rem;
   }
@@ -3238,6 +3261,11 @@ h3 {
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 

@@ -57,6 +57,14 @@
   right: 50px;
 }
 
+.btn-led {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn-led.led-effect {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
 @keyframes led-animation {
   0% {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00f,
