@@ -102,6 +102,15 @@ bn40 {
   display: flex;
 }
 
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 2s forwards;
+}
+
 .bn30 {
   border: 5em;
   cursor: pointer;
@@ -123,6 +132,7 @@ bn40 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  font-weight: bold;
 }
 
 .bn30:after {
@@ -136,15 +146,18 @@ bn40 {
   right: 0;
   z-index: -1;
   background: #221660;
+  font-weight: bold;
 }
 
 .bn30:hover {
   background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
   box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+  font-weight: bold;
 }
 
 .bn30:hover .text {
   background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  font-weight: bold;
 }
 
 .bn31 {
@@ -249,4 +262,44 @@ h3 {
 .blink-animation-delay {
   animation: blink 1s infinite;
   animation-delay: 0.5s;
+}
+
+.efeito3d {
+  transition: transform 0.3s ease-in-out;
+}
+
+.efeito3d:hover {
+  transform: scale(1.1);
+}
+
+.efeito3d h3 {
+  animation: pulsate 1.5s infinite alternate;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.led-effect {
+  color: #edf2f7;
+  text-shadow: 0 0 5px #160b3f, 0 0 10px #160b3f, 0 0 20px #160b3f,
+    0 0 30px #160b3f, 0 0 40px #160b3f, 0 0 70px #160b3f, 0 0 80px #160b3f,
+    0 0 100px #160b3f;
+  animation: blink 1.5s infinite alternate;
+}
+
+@keyframes blink {
+  to {
+    text-shadow: 0 0 5px #160b3f, 0 0 10px #160b3f, 0 0 20px #160b3f,
+      0 0 30px #160b3f, 0 0 40px #160b3f, 0 0 70px #160b3f, 0 0 80px #160b3f,
+      0 0 100px #160b3f, 0 0 150px #160b3f;
+  }
 }

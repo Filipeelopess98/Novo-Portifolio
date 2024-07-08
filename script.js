@@ -34,3 +34,4 @@ setInterval(() => {
         text.style.textShadow = "none";
     }, 500);
 }, 1000);
+
