@@ -1,8 +1,8 @@
-
 const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
 const minimizeBtn = document.getElementById('minimize-btn');
 const menu = document.getElementById('menu');
+const menuLinks = document.querySelectorAll('#menu .menu-link');
 
 menuBtn.addEventListener('click', () => {
     menu.classList.add('open');
@@ -10,12 +10,25 @@ menuBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
     menu.classList.remove('open');
+
+
+    menu.classList.add('animate__animated', 'animate__fadeOutUp');
+
+
+    setTimeout(() => {
+        menu.classList.remove('animate__animated', 'animate__fadeOutUp');
+    }, 500);
 });
 
 minimizeBtn.addEventListener('click', () => {
     menu.classList.remove('open');
 });
 
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('open');
+    });
+});
 
 function toggleDescription(id) {
     const descricao = document.getElementById(id);
@@ -34,4 +47,5 @@ setInterval(() => {
         text.style.textShadow = "none";
     }, 500);
 }, 1000);
+
 
