@@ -75,3 +75,4 @@ setInterval(() => {
         textElement.style.textShadow = "none";
     }, 500);
 }, 1000);
+
