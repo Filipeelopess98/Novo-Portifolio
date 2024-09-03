@@ -69,6 +69,20 @@
             </div>
         </div>
     </header>
+    <div id="menu" class="menu-fullscreen bg-custom-blue">
+        <button id="close-btn" class="close-btn bg-transparent text-custom-blue text-5xl">&times;</button>
+        <a href="#" class="block text-custom-blue  text-2xl py-2 no-underline bn30 font-semibold ">Página Inicial
+        </a>
+        <br>
+        <a href="#sobre" class="block text-custom-blue  text-2xl py-2 no-underline bn30 font-semibold ">Sobre
+            Mim</a>
+        <br>
+        <a href="#habilidades" class="block text-custom-blue text-2xl py-2 no-underline bn30 font-semibold "> Minhas
+            Habilidades</a>
+        <br>
+        <a href="#projetos" class="block text-custom-blue text-2xl py-2 no-underline bn30 font-semibold "> Meus
+            Projetos</a>
+    </div>
     <main class="h-screen flex items-center justify-center bg-cover bg-center"
         style="background-image: url('Fundos/FUNDO\ DESFOCADO.jpg'); background-size: cover; background-position: center;">
         <section class="relative w-full h-screen">
@@ -83,7 +97,9 @@
                             class="font-Poppins text-2xl md:text-3xl lg:text-4xl block text-gray-200 blink-animation-delay">
                         </span>
                     </h4>
-                    <div class="flex justify-center gap-4 mb-20">
+                    <br>
+                    <br>
+                    <div class="flex-col flex justify-center gap-4 mb-20">
                         <a href="https://drive.google.com/file/d/1O647rV7Pg6mgjsPEJS0p8v2HhLie1-2W/view?usp=sharing"
                             target="_blank">
                             <button id="btn-curriculo"
@@ -97,7 +113,7 @@
                                 <i class="fab fa-linkedin mr-2"></i> LinkedIn
                             </button>
                         </a>
-                        <a href="https://wa.me/19982759005" target="_blank">
+                        <a href="https://wa.me/1234567890" target="_blank">
                             <button id="btn-whatsapp"
                                 class="btn-led font-Poppins text-sm md:text-md lg:text-lg px-4 md:px-6 py-2 md:py-3 bg-custom-blue text-gray-200 font-bold rounded">
                                 <i class="fab fa-whatsapp mr-2"></i> WhatsApp
@@ -113,21 +129,21 @@
         <div
             class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center text-center md:text-left">
             <div class="md:w-1/2 md:pr-8 order-2 md:order-1 mb-8 md:mb-0 relative">
-                <h2 class=" font-bangers text-48px text-3xl font-bold text-gray-200 mb-4">Sobre Mim</h2>
+                <h2 class=" font-bangers text-48px text-3xl font-bold text-custom-gray mb-4">Sobre Mim</h2>
                 <p class="text-gray-300 text-md text-center  md:text-left">
-                    Atualmente em transição de carreira, sou um desenvolvedor front-end apaixonado por criar interfaces
-                    atraentes e funcionais. Possuo sólida experiência em HTML, CSS e JavaScript, além de domínio em
-                    frameworks como Tailwind CSS e Bootstrap. Estou continuamente buscando aprimorar minhas habilidades
-                    e conhecimentos para entregar soluções de alta qualidade em projetos e conquistar minha primeira
-                    oportunidade.
+                    Atualmente em transição de carreira, sou apaixonado por criar
+                    interfaces bonitas e funcionais. Possuo experiência em HTML, CSS e JavaScript, além de habilidades
+                    em
+                    frameworks como Tailwind CSS e Bootstrap. <br>Estou constantemente buscando aprender e evoluir para
+                    oferecer
+                    as melhores soluções aos meus projetos e conquistar a minha primeira oportunidade como desenvolvedor
+                    front-end.
                 </p>
             </div>
+            <br>
             <div class="md:w-1/2 md:pl-8 order-1 md:order-2 relative">
                 <div class=" w-200 mx-auto mb-4 overflow-hidden relative">
-                    <img src="assets/photo-about.png" class="object-cover w-full h-full">
-                    <div class="absolute inset-0  overflow-hidden">
-
-                    </div>
+                    <img src="assets/photo-about.png" class="object-cover ">
                 </div>
             </div>
         </div>
@@ -139,7 +155,7 @@
             <h2 class="font-bangers text-48px text-custom-blue  text-center mb-18 lg:mb-16 led-effect">Minhas
                 Habilidades</h2>
             <div class="flex flex-wrap justify-center gap-6 lg:gap-10">
-                <div class="w-full sm:w-1/2 lg:w-1/4 text-center mb-10 px-4 rounded-xl">
+                <div class="w-full sm:w-1/2 lg:w-1/4 text-center mb-10 px-4">
                     <div
                         class="bg-custom-blue text-white shadow-md rounded-xl p-10 transform transition duration-500 hover:scale-110">
                         <img src="https://img.icons8.com/color/96/000000/html-5--v1.png" alt="HTML Icon"
@@ -184,13 +200,12 @@
     </section>
     <section id="projetos" class="pt-40 bg-custom-blue-dark">
         <div class="container mx-auto px-4">
-            <h2 class=" font-bangers text-48px text-custom-gray text-3xl  text-center mb-8">Meus
+            <h2 class=" font-bangers text-48px text-custom-gray text-3xl  text-center mb-8 led-effect">Meus
                 Projetos
             </h2>
-            <br>
-            <br>
+            br
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="bg-custom-gray p-4 shadow-lg rounded-lg relative overflow-hidden group bn31 efeito3d ">
+                <div class="bg-gray-300 p-4 shadow-lg rounded-lg relative overflow-hidden group bn31 efeito3d ">
                     <div id="carouselExample1" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -216,7 +231,7 @@
                         </div>
                     </div>
                     <h3 class="  text-custom-blue text-xl font-bold mt-4 text-center">Cardápio Online</h3>
-                    <p class=" text-custom-blue mt-2 text-center font-poppins text-12px font-semibold ">Permite que os
+                    <p class=" text-custom-blue mt-2 text-center font-poppins text-12px font-semibold">Permite que os
                         clientes
                         visualizem o menu e façam
                         pedidos. Após finalizado, o mesmo é enviado via WhatsApp para o estabelecimento.</p>
@@ -248,7 +263,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="bg-custom-gray p-4 shadow-lg rounded-lg relative overflow-hidden group bn31 efeito3d">
+                <div class="bg-gray-300 p-4 shadow-lg rounded-lg relative overflow-hidden group bn31 efeito3d">
                     <div id="carouselExample2" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -306,7 +321,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="bg-custom-gray p-4 shadow-lg rounded-lg relative overflow-hidden group bn31 efeito3d">
+                <div class="bg-gray-300 p-4 shadow-lg rounded-lg relative overflow-hidden group bn31 efeito3d">
                     <div id="carouselExample3" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -365,7 +380,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="bg-custom-gray p-4 shadow-lg rounded-lg relative overflow-hidden group bn31 efeito3d">
+                <div class="bg-gray-300 p-4 shadow-lg rounded-lg relative overflow-hidden group bn31 efeito3d">
                     <div id="carouselExample4" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -396,7 +411,7 @@
                         do curso DevClub
                         Full Stack, o Jokepô é um jogo clássico, também conhecido como pedra, papel e tesoura. Nele,
                         ocorre uma disputa entre o usuário e a máquina..</p>
-                    <div class="mt-4 flex justify-center space-x-4">
+                    <div class=" mt-4 flex justify-center space-x-4">
                         <span
                             class="text-5xl text-gray-500 transition-all duration-300 transform hover:scale-110 hover:text-orange-500">
                             <i class="fab fa-html5"></i>
@@ -424,7 +439,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="bg-custom-gray p-4 shadow-lg rounded-lg relative overflow-hidden group bn31 efeito3d">
+                <div class="bg-gray-300 p-4 shadow-lg rounded-lg relative overflow-hidden group bn31 efeito3d">
                     <div id="carouselExample5" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -483,7 +498,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="bg-custom-gray p-4 shadow-lg rounded-lg relative overflow-hidden group bn31 efeito3d">
+                <div class="bg-gray-300 p-4 shadow-lg rounded-lg relative overflow-hidden group bn31 efeito3d">
                     <div id="carouselExample6" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -506,9 +521,8 @@
                             </button>
                         </div>
                     </div>
-                    <h3 class=" text-custom-blue text-xl font-bold mt-4 text-center">To List</h3>
-                    <p class=" text-custom-blue mt-2 text-center font-poppins text-12px font-semibold">Consiste em uma
-                        aplicação
+                    <h3 class=" text-custom-purple text-xl font-bold mt-4 text-center">To List</h3>
+                    <p class=" text-custom-purple mt-2 text-center font-poppins text-12px">Consiste em uma aplicação
                         para gerenciamento de
                         tarefas, onde os usuários podem criar, visualizar, editar e removê-las</p>
                     <div class="mt-4 flex justify-center space-x-4">
@@ -559,7 +573,7 @@
                                 class="w-10 h-10 inline-block">
                         </a>
                     </div>
-                    <div class="text-center text-white font-semibold mt-4">
+                    <div class="text-center text-custom-gray font-bold mt-4">
                         &copy; 2024 Filipe Lopes
                     </div>
                 </div>
