@@ -4,9 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-blue': '#164686',
+        'custom-blue-dark': '#060915',
+        'custom-blue': '#06091A',
         'custom-purple': '#160b3f',
         'custom-black': '#010005',
+        'custom-gray': '#E3E8EB',
+
       },
       boxShadow: {
         'custom-purple': '0 4px 6px rgba(108, 58, 224, 0.5)',

@@ -126,7 +126,7 @@ bn40 {
   height: 2px;
   display: block;
   content: "";
-  background: linear-gradient(-90deg, #b06ab3 0%, #4568dc 50%, #07011d 100%);
+  background: #e3e8eb;
   opacity: 1;
   margin-bottom: -6px;
   margin-top: 1px;
@@ -152,7 +152,7 @@ bn40 {
   font-size: 16px;
   -webkit-transform: translate(0);
   transform: translate(0);
-  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  background-image: #e3e8eb;
   padding: 0.7em 2em;
   border-radius: 65px;
   box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
@@ -165,8 +165,7 @@ bn40 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
-  font-weight: bold;
+  background-image: #06091a;
 }
 
 .bn30:after {
@@ -179,19 +178,16 @@ bn40 {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background: #221660;
-  font-weight: bold;
+  background: #06091a;
 }
 
 .bn30:hover {
-  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  background-image: #e3e8eb;
   box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
-  font-weight: bold;
 }
 
 .bn30:hover .text {
-  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-  font-weight: bold;
+  background-image: #e3e8eb;
 }
 
 .bn31 {
@@ -210,21 +206,21 @@ bn40 {
 }
 
 .bn31:hover {
-  background-image: linear-gradient(-45deg, #07011d, #221660);
+  background-image: #060915;
   box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
 }
 
 .bn31:hover p,
 h3 {
-  color: #ffffff;
+  color: #06091a;
 }
 
 .bn31:hover h3 {
-  color: #ffffff;
+  color: #06091a;
 }
 
 .bn31:hover .text {
-  background-image: linear-gradient(-45deg, #07011d, #221660);
+  background-image: #060915;
 }
 
 .transform3d {
@@ -318,21 +314,5 @@ h3 {
   }
   100% {
     transform: scale(1);
-  }
-}
-
-.led-effect {
-  color: #edf2f7;
-  text-shadow: 0 0 5px #160b3f, 0 0 10px #160b3f, 0 0 20px #160b3f,
-    0 0 30px #160b3f, 0 0 40px #160b3f, 0 0 70px #160b3f, 0 0 80px #160b3f,
-    0 0 100px #160b3f;
-  animation: blink 1.5s infinite alternate;
-}
-
-@keyframes blink {
-  to {
-    text-shadow: 0 0 5px #160b3f, 0 0 10px #160b3f, 0 0 20px #160b3f,
-      0 0 30px #160b3f, 0 0 40px #160b3f, 0 0 70px #160b3f, 0 0 80px #160b3f,
-      0 0 100px #160b3f, 0 0 150px #160b3f;
   }
 }
